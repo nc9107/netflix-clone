@@ -12,7 +12,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
     // Intialize movies tp be an empty array 
     const [movies, setMovies] = useState([]);
-    const [trailerUrl, setTrailerUrl] = useState([]);
+    const [trailerUrl, setTrailerUrl] = useState("");
 
     // A snippet of code which runs based on a specific condiiton/variable 
     useEffect(() => {
