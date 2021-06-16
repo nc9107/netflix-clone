@@ -1,0 +1,40 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row_posters {
+  /* display: flex; */
+  display: flex;
+  /* Just so that we have a row scroll horizontally. */
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  /* To prevent cropping out of film poster when it is pops out. VERY IMPORTANT */
+  padding: 20px;
+}
+/* Whatever browser, do not show scroll bar but keep the functionality of it as it is.  */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  /* Slows down the pop up hover providing a more clean affect */
+  transition: transform 450ms;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}
