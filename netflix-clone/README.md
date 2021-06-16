@@ -1,6 +1,6 @@
 
 Author: Nishanth Chaganty 
-Date Started: 6/16/2021
+Date Started: 6/15/2021
 
 Project Description: Netflix home page replication using React JS. Further functionality like authentication to be added. Axios has been used for making API calls to: 
 The Movie Database
