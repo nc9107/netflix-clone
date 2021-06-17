@@ -3,7 +3,7 @@
   margin-left: 20px;
 }
 
-.row_posters {
+.row__posters {
   /* display: flex; */
   display: flex;
   /* Just so that we have a row scroll horizontally. */
@@ -14,11 +14,11 @@
   padding: 20px;
 }
 /* Whatever browser, do not show scroll bar but keep the functionality of it as it is.  */
-.row_posters::-webkit-scrollbar {
+.row__posters::-webkit-scrollbar {
   display: none;
 }
 
-.row_poster {
+.row__poster {
   object-fit: contain;
   width: 100%;
   max-height: 100px;
@@ -27,14 +27,15 @@
   transition: transform 450ms;
 }
 
-.row_poster:hover {
+.row__poster:hover {
   transform: scale(1.08);
 }
 
-.row_posterLarge {
+.row__posterLarge {
   max-height: 250px;
 }
 
-.row_posterLarge:hover {
+.row__posterLarge:hover {
   transform: scale(1.09);
+  opacity:1
 }

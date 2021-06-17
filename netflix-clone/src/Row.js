@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from './axios'; //  axios is the alias for whatever we are trying to import from axios.js
 import "./Row.css";
 import YouTube from 'react-youtube';
-import movieTrailer from 'movie-trailer';
+import movieTrailer from "movie-trailer";
 
 
 // title is the props passed in here from App.js 
@@ -61,13 +61,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
             {/* title */}
             <h2>{title}</h2>
             {/* Contianer -> posters */}
-            <div className="row_posters">
+            <div className="row__posters">
                 {/* row_poster */}
                 {movies.map(movie => (
                     <img
                         key={movie.id}
                         onClick={()=> handleClick(movie)}
-                        className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                        className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                         src={`${baseUrl}${isLargeRow ? movie.poster_path: movie.backdrop_path}`}
                         alt={movie.name} />
                 ))}
