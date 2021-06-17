@@ -1,4 +1,4 @@
-.row {
+  .row {
   color: white;
   margin-left: 20px;
 }
@@ -29,6 +29,7 @@
 
 .row__poster:hover {
   transform: scale(1.08);
+  opacity:1;
 }
 
 .row__posterLarge {
