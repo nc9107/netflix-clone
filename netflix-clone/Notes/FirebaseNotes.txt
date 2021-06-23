@@ -1,0 +1,17 @@
+# Setting up payments with Stripe:
+We have two different sets of keys: 
+    Live and Test API key which allows us to test without real world actual transactions.
+
+# Editing rules of firebase cloud storage is: 
+    Helps us control access to authorized users to access their checkout sessions and subscription plans. 
+    Inside of firestore collection, the stripe extension automatically populates the customer, their subscriptions 
+    and pricing plans inside Firestore.
+
+# Configure Stripe Webhooks:
+webhooks are a way for apps to communicate between them automatically. An event-driven architecture being a software 
+promoting the production, detection, consumption of, and reaction to events. An event can be defined as “a significant 
+change in state.”
+
+You need to set up a webhook that synchronizes relevant details from Stripe with your Cloud Firestore. 
+This includes product and pricing data from the Stripe Dashboard, as well as customer's subscription details.
+If a product is updated, deleted, etc. we need to send an event to the firebase application.
